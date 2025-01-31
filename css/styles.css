@@ -463,6 +463,8 @@ footer ul li a {
     display: flex;
     background: #060606;
     border-radius: 999px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 footer ul li a.Special{
@@ -912,7 +914,14 @@ img.left-bottom{
     }
 
     footer ul.socials{
-        flex-direction: row;
+        flex-direction: column;
+    }
+
+    footer ul.socials li a{
+        margin-bottom:10px;
+        margin-top:10px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     
