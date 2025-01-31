@@ -1,0 +1,946 @@
+
+* { margin: 0;  padding: 0;  box-sizing: border-box; }
+
+.effect {  -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+
+body { font-family: "Outfit", serif; overflow-x:hidden; background:#000; }
+
+
+header{
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    top: 0;
+    z-index: 12;
+    background: linear-gradient(to bottom, black, #0000007a, transparent);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 122px;
+    padding: 0px 35px;
+    transform: translate(-50%);
+}
+
+.video_agi{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    filter: contrast(1.2);
+}
+
+.logo_agi{
+    width: 200px;
+    cursor: pointer;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+header ul li a{
+    padding: 20px 22px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Outfit", serif;
+}
+
+header ul li a.Special{
+    border-radius: 99px;
+    padding:20px 40px;
+    height: 70px;
+    border:solid 1px #fff;
+    margin-left:30px;
+    font-weight: 600;
+    background: #000;
+}
+
+.icon_agi{
+    
+}
+
+.title_agi{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-family: cropar;
+    letter-spacing: 4px;
+    line-height: 1em;
+}
+
+
+
+
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section.Boxes{
+    min-height: initial;
+    position: relative;
+    z-index: 1;
+}
+
+section.Hero{
+    min-height: 80vh;
+ }
+
+section.Hero .twopart{ 
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+section.Hero .twopart > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.Hero .twopart > div.firstSecHero{
+    width: 40%;
+    z-index: 1;
+}
+
+section.Hero .twopart > div.secondSecHero{
+    width: 60%;
+    z-index: 0;
+}
+
+section.Hero .twopart > div.secondSecHero video{
+    scale: 1.3;
+}
+
+section.Hero .twopart > div h1{
+    color: #fff;
+    font-family: cropar;
+    font-weight: 100;
+}
+
+section.Hero .twopart > div h1 .mainTitle{
+    font-size: 3em;
+    display: block;
+    line-height: 0.9em;
+    margin-top: 0px;
+}
+
+section.Hero .twopart > div h1 .mainTitle span{
+    font-size: 1.5em;
+    line-height: 1.45em;
+}
+
+section.Hero .twopart > div h1 .subTitle{
+    font-size: 22px;
+    line-height: normal;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 28px;
+    font-family: "Outfit", serif;
+    max-width: 420px;
+}
+
+
+section.Hero .twopart > div .buttons{
+    display: flex;
+}
+
+section.Hero .twopart > div .buttons .cta1{
+    background: linear-gradient(46deg, #770095, #c85ce3);
+    padding: 20px 50px;
+    border-radius: 99px;
+    height: 80px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: normal;
+}
+
+section.Hero .twopart > div .buttons .cta2{
+    padding: 20px 50px;
+    border-radius: 99px;
+    height: 80px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+
+section.Below{
+    min-height: 65vh;
+}
+
+section.Below .twopart{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+
+section.Below .twopart > div{
+    width: 50%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+section.Below .twopart > div.firstDivSec{
+    width: 60%;
+}
+
+section.Below .twopart > div.secondDivSec{
+    padding-top:90px;
+    width: 40%;
+    position: relative;
+    align-items: center;
+}
+
+section.Below .twopart > div.secondDivSec > div{
+    position: absolute;
+    width: 100%;
+}
+
+section.Below .twopart > div video{
+    scale: 1.3;
+    margin-top: -50px;
+    filter: contrast(1.7);
+    height: 70vh;
+}
+
+section.Below .twopart > div h2{
+    color: #fff;
+    font-family: cropar;
+    font-weight: 100;
+    text-align: center;
+}
+
+section.Below .twopart > div h2 img{
+    width: 100px;
+    rotate: 180deg;
+    margin-top: 50px;
+}
+
+section.Below .twopart > div h2 .mainTitle{
+    font-size: 40px;
+    display: block;
+    line-height: 0.9em;
+}
+
+section.Below .twopart > div h2 .subTitle{
+    font-size: 18px;
+    display: block;
+    line-height: 1.4em;
+    font-family: "Outfit", serif;
+    max-width: 360px;
+    margin: 25px auto 0px auto;
+}
+
+section.Features{
+    min-height: initial;
+    z-index: 2;
+    position: relative;
+}
+
+section.Below .techs{
+    position: absolute;
+    bottom: -360px;
+    width: 60%;
+    opacity: 0.5;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+section.Features .twopart{
+    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:100px;
+}
+
+section.Features .twopart > div{
+    height: 300px;
+    background: #161616;
+    width: calc(50% - 30px);
+    margin:15px;
+    border-radius: 30px;
+    padding:30px;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+section.Features .twopart > div > div{
+    position: absolute;
+    bottom: -50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.Features .twopart > div > div.desc{
+    position: absolute;
+    top: 19px;
+    max-width: 270px;
+    color: #000;
+    opacity: 0;
+    z-index: 9;
+    font-weight: 200;
+}
+
+section.Features .twopart > div:hover > div.desc{
+    opacity: 1;
+    top: 29px;
+}
+
+section.Features .twopart > div:hover > div {
+    bottom: 30px;
+}
+
+section.Features .twopart > div:hover {
+    background:#FFF;
+    box-shadow: 0px 0px 40px #636363;
+}
+
+section.Features .twopart > div h3{
+    color: #fff;
+    font-size: 2em;
+    font-family: cropar;
+    font-weight: 100;
+    margin: 95px 0px 30px 0px;
+}
+
+section.Features .twopart > div span{
+    color:#fff;
+    font-size: 2em;
+    font-family: cropar;
+    font-weight: 100;
+}
+
+section.Features .twopart > div img{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    opacity: 0.5;
+    width: 45px;
+    filter:invert(1)
+}
+
+section.Features .twopart > div:hover img{
+    right: 30px;
+    top:30px;
+    opacity: 1;
+}
+
+section.Features .twopart > div:hover span{
+    color:#000;
+}
+
+
+.iconFoot{
+    width: 70px;
+    position: absolute;
+    bottom: 74px;
+    animation: moveIcon 1s ease-in-out infinite; 
+}
+
+@keyframes moveIcon {
+    0% { bottom:74px; }
+    50% { bottom:90px; }
+    100% { bottom:74px; }
+}
+
+
+section.CalltoAction{
+    min-height: initial;
+    margin-top: 30px;
+    position: relative;
+}
+
+section.CalltoAction .twopart{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:120px;
+    padding-bottom:180px;
+}
+
+section.CalltoAction .twopart h3{
+    color:#fff;
+    line-height: 1.25em;
+    text-align: center;
+    font-family: cropar;
+    font-weight: 100;
+    font-size: 2.25em;
+}
+
+section.CalltoAction .twopart a{
+    color: #000;
+    text-decoration: none;
+    margin-top: 50px;
+    display: flex;
+    background: #fff;
+    padding: 25px 50px;
+    border-radius: 99px;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+footer ul li a{
+    padding:20px 16px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: "Outfit", serif;
+}*/
+
+footer ul li a {
+    padding: 25px 35px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: "Outfit", serif;
+    align-items: center;
+    display: flex;
+    background: #060606;
+    border-radius: 999px;
+}
+
+footer ul li a.Special{
+    border-radius: 99px;
+    padding:20px 40px;
+    height: 70px;
+    border:solid 1px #fff;
+    margin-left:30px;
+}
+
+footer ul li a img{
+    width: 20px;
+}
+
+footer ul.socials li a img{
+    margin-right:15px;
+}
+
+.videoFooter{
+    position: absolute;
+    border: 0;
+    left: 50%;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+    max-width: 1200px;
+    transform: translateX(-50%);
+    object-fit: cover;
+    height: 50vh;
+}
+
+.just_end{
+    justify-content: end;
+}
+
+.just_start{
+    justify-content: start;
+}
+
+
+
+.aiagents{
+    display: flex;
+    max-width: 1600px;
+    gap: 31px;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 100%;
+    z-index: 8;
+
+}
+
+
+/*
+.aiagents > div{
+    width: 250px;
+    height: 250px;
+    background: #0c0c0c;
+    border-radius: 43px;
+}*/
+
+.aiagents > div {
+    width: calc(33% - 93px);
+    height: 310px;
+    background: #181818;
+    border-radius: 30px;
+    max-width: 430px;
+    position: relative;
+    top:0;
+}
+
+.aiagents > div img.arrow{
+    width: 35px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.aiagents > div .info{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: calc(50% - 30px);
+}
+
+.aiagents > div .info h2{
+    font-weight: 300;
+    color: #fff;
+    font-size: 2em;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+
+.aiagents > div .info p{
+    color:#bdbdbd;
+    font-weight: 100;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.aiagents > div .aiagent{
+    height: 102%;
+    right: 13px;
+    position: absolute;
+    top: 14px;
+}
+
+.aiagents > div .aiagent.aidog{
+    right: 0px;
+}
+
+.aiagents > div .aiagent.papayaai{
+    top: initial;
+    bottom: 0;
+    height: 105%;
+}
+
+.aiagents > div:hover{
+    top:-10px;
+}
+
+
+.aiagents > div ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.aiagents > div ul img{
+    width: 16px;
+    margin-right: 16px;
+    margin-top: 11px;
+}
+
+
+
+
+/* Scroll and Observe Animations */
+.observe {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.observe.in-viewport {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+section.Hero .twopart > div.secondSecHero video.onMobile{
+    display:none;
+}
+section.Hero .twopart > div.secondSecHero video.onDesktop{
+    display:block;
+}
+
+
+
+
+
+.topLine{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 20px;
+    background: #040504;
+    z-index: 10;
+}
+
+.bottomLine{
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    width: 100%;
+    height: 20px;
+    background: #040504;
+    z-index: 10;
+}
+
+.leftLine{
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    height: 100%;
+    width: 20px;
+    background: #040504;
+    z-index: 10;
+}
+
+.rightLine{
+    position: fixed;
+    bottom:0px;
+    right:0px;
+    height: 100%;
+    width: 20px;
+    background: #040504;
+    z-index: 10;
+}
+
+img.right-top{
+    position: fixed;
+    top:0;
+    right:0;
+    width: 75px;
+    z-index: 11;
+}
+img.right-bottom{
+    position: fixed;
+    bottom:0;
+    right:0;
+    width: 75px;
+    z-index: 11;
+}
+img.left-top{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 75px;
+    z-index: 11;
+}
+img.left-bottom{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 75px;
+    z-index: 11;
+}
+
+.bannerMcAfee{
+    margin-top: -15px;
+    width: 100%;
+}
+
+.bannerMcAfee img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1220px;
+    border-radius:20px;
+}
+
+.bannerMcAfee img.dsk{
+    display: block;
+}
+
+.bannerMcAfee img.mvl{
+    display: none;
+}
+
+
+@media (max-width: 990px) {
+
+    .bannerMcAfee{
+        padding:0px 20px;
+        margin-bottom:0px;
+    }
+
+    .bannerMcAfee img.dsk{
+        display: none;
+    }
+    
+    .bannerMcAfee img.mvl{
+        display: block;
+    }
+
+    /* Scroll and Observe Animations */
+    .observe {
+        opacity: 1;
+        transform: translateY(0px);
+        transition: opacity 0s ease, transform 0s ease;
+    }
+
+    .observe.in-viewport {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0s ease, transform 0s ease;
+    }
+
+
+    section.Hero .twopart {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    section.Hero .twopart > div.firstSecHero {
+        width: 100%;
+        margin-top: -60px;
+    }
+    section.Hero .twopart > div.secondSecHero {
+        width: 100%;
+    }
+    section.Hero .twopart > div h1 .mainTitle {
+        font-size: 2em;
+        line-height: 1.1em;
+        text-align: center;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+    section.Hero .twopart > div h1 .subTitle {
+        font-size: 1em;
+        display: block;
+        text-align: center;
+        line-height: 1.2em;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+    section.Hero .twopart > div .buttons {
+        flex-direction: column;
+        max-width: 240px;
+        margin: 10px auto 100px auto;
+        width: 100%;
+    }
+    section.Hero .twopart > div.secondSecHero video {
+        scale: 1;
+    }
+    section.Hero .twopart > div.secondSecHero video.onMobile{
+        display:block;
+    }
+    section.Hero .twopart > div.secondSecHero video.onDesktop{
+        display:none;
+    }
+
+    section.Features .twopart > div {
+        width: calc(100% - 30px);
+        margin: 0px 20px 15px 20px;
+        padding: 40px;
+        cursor: default;
+        position: relative;
+        overflow: hidden;
+    }
+
+    section.Features .twopart > div:hover > div {
+        bottom: 30px;
+    }
+    section.Features .twopart > div span {
+        font-size: 2em;
+    }
+    section.CalltoAction .twopart {
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .logo_agi {
+        width: 120px;
+    }
+    header ul li a.Special {
+        padding: 10px 20px;
+    }
+    header {
+        height: 73px;
+        width: 100%;
+        z-index: 12;
+        padding: 0px 25px;
+    }
+    section.Features .twopart > div h3 {
+        font-size: 2em;
+        margin-top: 60px;
+    }
+
+    section.Below .twopart {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    section.Below .twopart > div.firstDivSec {
+        width: 100%;
+    }
+    section.Below .twopart > div.secondDivSec {
+        width: 100%;
+        height: initial;
+        padding: 0;
+    }
+    .techs{
+        display: none;
+    }
+    section.Below .twopart > div video {
+        scale: 1;
+        margin-top: 0;
+        height: 100vh;
+    }
+    section.Below {
+        min-height: 100vh;
+    }
+    section.Below .twopart > div h2 .mainTitle {
+        font-size: 1.2em;
+        line-height: 1.1em;
+    }
+    section.Below .twopart > div h2 .subTitle {
+        font-size: 20px;
+        margin-top: 20px;
+        display: block;
+        line-height: 1.4em;
+        font-family: "Outfit", serif;
+    }
+    section.Below .twopart > div h2 .mainTitle{
+        font-size: 1.5em;
+        line-height: 0.9em;
+    }
+    
+    section.Below .twopart > div h2 .subTitle{
+        font-size: 14px;
+        margin-top:20px;
+        line-height: 1.4em;
+    }
+    .aiagents {
+        padding-bottom: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aiagents > div,
+    .aiagents > div:hover{
+        width: 100%;
+        height: 255px;
+        top: 0;
+        max-width: 380px;
+    }
+
+    img.left-top {
+        top: 79px;
+    }
+    img.right-top {
+        top: 79px;
+    }
+    .topLine {
+        height: 98px;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        padding-bottom: 50px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center !important;
+        align-items: center;
+        margin:20px 0px;
+    }
+
+    footer ul li a{
+        /*padding: 10px 0px;*/
+        display: block;
+    }
+
+    footer ul.socials{
+        flex-direction: row;
+    }
+
+    
+    /*footer ul.socials li a {
+        padding: 10px 20px;
+    }*/
+
+    header ul li:not(.SP){
+        display:none
+    }
+
+    section.Below .twopart > div.secondDivSec > div {
+        padding: 0px 30px;
+    }
+    .aiagents {
+        gap: 72px !important;
+    }
+    section.Features .twopart {
+        margin-top: 0;
+    }
+
+    section.Features .twopart > div:hover > div.desc{
+        opacity: 1;
+        top: 36px;
+        bottom: initial;
+        max-width: 230px;
+    }
+    
+}
+
+

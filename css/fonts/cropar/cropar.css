@@ -1,0 +1,13 @@
+
+
+
+@font-face {
+    font-family: 'cropar';
+    src: url('woff/cropar.woff') format('woff'),
+         url('woff2/cropar.woff2') format('woff2'),
+         url('otf/cropar.otf') format('opentype'),
+         url('ttf/cropar.svg') format('truetype');
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+}
